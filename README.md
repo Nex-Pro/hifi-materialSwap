@@ -1,7 +1,7 @@
 # hifi-materialSwap
 
 
-  This is a fairly straight foward script / tablet app that is intended to be attached to an avatar in order to be able to swap materials between a set of preconfigured options.
+  This is a fairly straight forward script / tablet app that is intended to be attached to an avatar in order to be able to swap materials between a set of preconfigured options.
 
 When the script is running you get an additional button on the tablet / toolbar named "SKINS". Clicking this will display the skin chooser as pictured below:
 
