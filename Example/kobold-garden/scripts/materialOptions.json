@@ -1,0 +1,154 @@
+﻿[
+  {
+    "id": "Green",
+    "displayName": "Green",
+    "description": "",
+    "thumbnail": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/thumb-green.jpg",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "Material.003",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Green/nk4.png",
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Red",
+    "displayName": "Red",
+    "description": "",
+    "thumbnail": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/thumb-red.jpg",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "Material.003",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Red/nk4.png",
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Pink",
+    "displayName": "Pink",
+    "description": "",
+    "thumbnail": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/thumb-pink.jpg",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "Material.003",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Pink/nk4.png",
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "LightGreen",
+    "displayName": "Light Green",
+    "description": "",
+    "thumbnail": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/thumb-lightGreen.jpg",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "Material.003",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/LightGreen/nk4.png",
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Blue",
+    "displayName": "Blue",
+    "description": "",
+    "thumbnail": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/thumb-blue.jpg",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "Material.003",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Blue/nk4.png",
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "DarkGrey",
+    "displayName": "Dark Grey",
+    "description": "",
+    "thumbnail": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/thumb-darkGrey.jpg",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "Material.003",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/DarkGrey/nk4.png",
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Teal",
+    "displayName": "Teal",
+    "description": "",
+    "thumbnail": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/thumb-teal.jpg",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "Material.003",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Teal/nk4.png",
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "Purple",
+    "displayName": "Purple",
+    "description": "",
+    "thumbnail": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/thumb-purple.jpg",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "Material.003",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Purple/nk4.png",
+          }
+        }
+      }
+    ]
+  },
+]

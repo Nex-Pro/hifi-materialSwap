@@ -1,0 +1,20 @@
+﻿[
+  {
+    "id": "someid",
+    "displayName": "a display name",
+    "description": "",
+    "thumbnail": "",
+    "materials": [
+      {
+        "materialURL": "materialData",
+        "materialName": "",
+        "materialData": {
+          "materialVersion": 1,
+          "materials": {
+            "model": "hifi_pbr",
+          }
+        }
+      }
+    ]
+  }
+]

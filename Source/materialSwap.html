@@ -1,0 +1,249 @@
+﻿<html>
+<head>
+    <title>Material Swap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700" rel="stylesheet">
+    <style>
+
+        body {
+            margin: 0;
+            width: 100%;
+            font-family: 'Raleway', sans-serif;
+            color: white;
+            background: linear-gradient(#2b2b2b, #0f212e);
+        }
+
+        .top-bar {
+            height: 90px;
+            background: linear-gradient(#2b2b2b, #1e1e1e);
+            font-weight: bold;
+            padding-left: 30px;
+            padding-right: 30px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 480px;
+            top: 0;
+            z-index: 1;
+        }
+
+        .content {
+            margin-top: 80px;
+            padding: 10px;
+        }
+
+        input[type=button] {
+            font-family: 'Raleway';
+            font-weight: bold;
+            font-size: 13px;
+            text-transform: uppercase;
+            vertical-align: top;
+            height: 28px;
+            min-width: 120px;
+            padding: 0px 18px;
+            margin-right: 6px;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            background-color: #000;
+            background: linear-gradient(#343434 20%, #000 100%);
+            cursor: pointer;
+        }
+
+            input[type=button].red {
+                color: #fff;
+                background-color: #94132e;
+                background: linear-gradient(#d42043 20%, #94132e 100%);
+            }
+
+            input[type=button].blue {
+                color: #fff;
+                background-color: #1080b8;
+                background: linear-gradient(#00b4ef 20%, #1080b8 100%);
+            }
+
+            input[type=button].white {
+                color: #121212;
+                background-color: #afafaf;
+                background: linear-gradient(#fff 20%, #afafaf 100%);
+            }
+
+            input[type=button]:enabled:hover {
+                background: linear-gradient(#000, #000);
+                border: none;
+            }
+
+            input[type=button].red:enabled:hover {
+                background: linear-gradient(#d42043, #d42043);
+                border: none;
+            }
+
+            input[type=button].blue:enabled:hover {
+                background: linear-gradient(#00b4ef, #00b4ef);
+                border: none;
+            }
+
+            input[type=button].white:enabled:hover {
+                background: linear-gradient(#fff, #fff);
+                border: none;
+            }
+
+            input[type=button]:active {
+                background: linear-gradient(#343434, #343434);
+            }
+
+            input[type=button].red:active {
+                background: linear-gradient(#94132e, #94132e);
+            }
+
+            input[type=button].blue:active {
+                background: linear-gradient(#1080b8, #1080b8);
+            }
+
+            input[type=button].white:active {
+                background: linear-gradient(#afafaf, #afafaf);
+            }
+
+            input[type=button]:disabled {
+                color: #252525;
+                background: linear-gradient(#575757 20%, #252525 100%);
+            }
+
+            input[type=button][pressed=pressed] {
+                color: #00b4ef;
+            }
+
+        .materialOption{
+            cursor: pointer;
+            border: 1px solid gray;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+        .materialOption img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+        .materialOption .displayBlock{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .materialOption h3{
+            margin: 0px;
+        }
+        /** {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 20px;
+        }*/
+
+        ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        h3 {
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        li img {
+            float: left;
+            margin: 0 15px 0 0;
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        li p {
+            font-size: 12px;
+        }
+
+        li {
+            padding: 10px;
+            overflow: auto;
+        }
+
+            li:hover {
+                background: #343434;
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <h4>Material Swap</h4>
+    </div>
+    <div class="content">
+        <div id="app">
+            <ul>                
+                <li v-for="option in options" v-on:click="selectOption(option)" class="materialOption">
+                    <img v-if="option.thumbnail !== null && option.thumbnail.length > 0" v-bind:src="option.thumbnail" />
+                        
+                        <h3>{{ option.displayName }}</h3>
+                        <p v-if="option.description !== null && option.description.length > 0">{{ option.description }}</p>
+                        
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    <script>
+
+        var materialOptions = [];
+
+        function updateDisplayedOptions() {
+            new Vue({
+                el: '#app',
+                data: {
+                    options: materialOptions
+                },
+                methods: {
+                    selectOption: function (option) {
+                        EventBridge.emitWebEvent(JSON.stringify({
+                            "type": "materialSwap-setMaterialOption",
+                            "optionId": option.id
+                        }));
+                    },
+                }
+            })
+        }
+
+        function main() {
+            console.log("ready");
+
+            EventBridge.scriptEventReceived.connect(function (message) {
+                console.log("MaterialSwap: main: scriptEventReceived", message);
+
+                var messageData = JSON.parse(message);
+                var messageType = messageData['type'];
+
+                switch (messageType) {
+                    case 'materialSwap-settings':
+                        var settings = messageData['settings'];
+                        materialOptions = settings;
+                        updateDisplayedOptions();
+                        break;
+
+                    default:
+                        console.log("WEB: received unexpected script event message: " + message);
+                        break;
+                }
+            });
+
+            EventBridge.emitWebEvent(JSON.stringify({
+                "type": "materialSwap-getSettings",
+            }));
+            // debug code, this should be fired by event receipt of config
+            //updateDisplayedOptions();
+        }
+
+        $(document).ready(main);
+    </script>
+</body>
+</html>
