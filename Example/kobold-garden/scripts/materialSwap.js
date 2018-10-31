@@ -11,7 +11,7 @@ var materialSwap = function () {
     var APP_ICON = Script.resolvePath("terrain.svg");
 
     var materialEntityName = MyAvatar.displayName + "-Avatar-Material-Entity-";
-    var materialOptions = Script.require(Script.resolvePath("materialOptions.json"));
+    var materialOptions = Script.require(Script.resolvePath("materialOptions.json?v1"));
 
     // Get a reference to the tablet 
     var tablet = Tablet.getTablet("com.highfidelity.interface.tablet.system");

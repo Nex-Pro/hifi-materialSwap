@@ -12,7 +12,7 @@
           "materialVersion": 1,
           "materials": {
             "model": "hifi_pbr",
-            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Green/nk4.png",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Green/nk4.png"
           }
         }
       }
@@ -31,7 +31,7 @@
           "materialVersion": 1,
           "materials": {
             "model": "hifi_pbr",
-            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Red/nk4.png",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Red/nk4.png"
           }
         }
       }
@@ -50,7 +50,7 @@
           "materialVersion": 1,
           "materials": {
             "model": "hifi_pbr",
-            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Pink/nk4.png",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Pink/nk4.png"
           }
         }
       }
@@ -69,7 +69,7 @@
           "materialVersion": 1,
           "materials": {
             "model": "hifi_pbr",
-            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/LightGreen/nk4.png",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/LightGreen/nk4.png"
           }
         }
       }
@@ -88,7 +88,7 @@
           "materialVersion": 1,
           "materials": {
             "model": "hifi_pbr",
-            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Blue/nk4.png",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Blue/nk4.png"
           }
         }
       }
@@ -107,7 +107,7 @@
           "materialVersion": 1,
           "materials": {
             "model": "hifi_pbr",
-            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/DarkGrey/nk4.png",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/DarkGrey/nk4.png"
           }
         }
       }
@@ -126,7 +126,7 @@
           "materialVersion": 1,
           "materials": {
             "model": "hifi_pbr",
-            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Teal/nk4.png",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Teal/nk4.png"
           }
         }
       }
@@ -145,10 +145,10 @@
           "materialVersion": 1,
           "materials": {
             "model": "hifi_pbr",
-            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Purple/nk4.png",
+            "albedoMap": "https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden/alternativeTextures/Purple/nk4.png"
           }
         }
       }
     ]
-  },
+  }
 ]
