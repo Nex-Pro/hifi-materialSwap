@@ -62,6 +62,9 @@ Basic definition of a *materialOption* is:
 
 
 ## Attributions
+
+Menithal for the scripting sample that I used for the core of the material switcher.
+
 Assets used in the example:
 
 * Hifi Avatar from marketplace by Davwyn, [Link](https://highfidelity.com/marketplace/items/b641bdd6-5328-4b94-82eb-ab8b63d19ca0)
