@@ -1,8 +1,9 @@
 # hifi-materialSwap
 
-
-
-
+<p>
+  This is a fairly straight foward script / tablet app that is intended to be attached to an avatar in order to be able to swap materials between a set of preconfigured options.
+</p>
+<h2>Usage</h2>
 
 
 
