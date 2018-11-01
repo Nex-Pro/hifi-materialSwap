@@ -11,7 +11,7 @@ Then clicking on any of the options will update your avatar with the chosen mate
 
 ## Demo
 
-You can see the script in action by settings your avatar to:
+You can see the script in action by setting your avatar to:
 
 https://hifi.jollysoft.com/Assets/Avatars/koboldGardenMultiColour/kobold-garden.fst
 
