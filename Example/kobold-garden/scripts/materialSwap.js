@@ -67,7 +67,8 @@ var materialSwap = function () {
             priority: 1,
             parentMaterialName: "mat::" + material.materialName, // this name must match that used within the avatar model
             materialData: JSON.stringify(material.materialData),
-            parentID: MyAvatar.sessionUUID
+            parentID: MyAvatar.sessionUUID,
+            visible: false
         }, true);
     };
 
